@@ -23,7 +23,7 @@ CREATE TABLE persona_pertenece_faccion (
  id_faccion INTEGER,
  PRIMARY KEY (id_faccion, id_persona),
  FOREIGN KEY (id_persona) REFERENCES personas(id),
- FOREIGN KEY (id_faccion) REFERENCES facciones(id),
+ FOREIGN KEY (id_faccion) REFERENCES facciones(id)
 );
 
 CREATE TABLE cuentas_bancarias (
@@ -43,7 +43,7 @@ CREATE TABLE trabajos (
 );
 
 
-CREATE TABLE personas_tiene_trabajo (
+CREATE TABLE persona_tiene_trabajo (
  id_persona INTEGER,
  id_trabajo INTEGER,
  estado BOOL NOT NULL,
